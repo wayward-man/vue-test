@@ -1,0 +1,43 @@
+#page_wrap{
+    position: absolute;
+    width: 7.5rem;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+#absolute(@width:100%,@height:100%){
+    position: absolute;
+    width: @width;
+    height: @height;
+}
+
+#absolute_center_middle(@width:100%, @height:100%){
+    position: absolute;
+    width: @width;
+    height: @height;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#absolute_center(@width:100%, @height:100%){
+    position: absolute;
+    width: @width;
+    height: @height;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#relative_center(@width:100%, @height:100%,@top:0){
+    position: relative;
+    margin: @top auto ;
+    width: @width;
+    height: @height;
+}
+
+//背景路径
+#bg_img(@url,@width:100%,@height:100%){
+    background: url("../../static/img/@{url}");
+    background-size:@width @height;
+}
