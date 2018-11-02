@@ -1,13 +1,12 @@
 <template>
 	<div id="app">
-		<nodeReq />
+		<transferCanvas />
 	</div>
 </template>
 
 <script>
 import transferCanvas from "@/components/canvas/transferCanvas.vue";
-import nodeReq from "@/components/nodeReq.vue";
-
+import nodeReq from "@/components/nodeReq.vue"; // 配合node爬虫测试
 
 export default {
 	name: "App",
@@ -16,8 +15,7 @@ export default {
 		};
 	},
 	components: {
-		transferCanvas,
-		nodeReq
+		transferCanvas
 	},
 	mounted() {
 	},

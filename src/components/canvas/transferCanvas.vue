@@ -124,11 +124,10 @@ body {
 }
 
 .page_main {
-  width: 100%;
+  margin: 0 0.2rem;
   canvas {
     width: 100%;
     background: #333;
-    margin: 0 0.2rem;
   }
 }
 </style>
